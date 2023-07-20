@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="dropdown">
+        <button onclick="myFunction('login')" class="dropbtn">Login</button>
+        <div id="login" class="dropdown-content">
+            <a href="{{url_for('receptionist_login')}}">Receptionist</a>
+            <a href="{{url_for('manager_login')}}">Manager</a>
+            <a href="{{url_for('worker_login')}}">Worker</a>
+            <a href="{{url_for('admin_login')}}">Admin</a>
+        </div>
+    </div>
+{% endblock %}
